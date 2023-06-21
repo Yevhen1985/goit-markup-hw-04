@@ -35,7 +35,6 @@ ol {
 }
 
 .list {
-
     list-style: none;
 }
 
@@ -56,6 +55,7 @@ ol {
 
 img {
     display: block;
+    max-width: 100%;
 }
 
 .visually-hidden {
@@ -77,6 +77,8 @@ img {
     background-color: var(--white-text);
     padding: 25.5px 156px;
     border-bottom: 1px solid var(--btn-lines)
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -163,12 +165,16 @@ img {
 /* Main */
 /* Hero */
 .background {
+    max-width: 1440px;
+    height: 600px;
     background: var(--title-color);
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     padding: 188px 0 188px 0;
+    margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-title {
@@ -182,8 +188,8 @@ img {
     color: var(--white-text);
     max-width: 496px;
     margin-bottom: 48px;
-    margin: 0 auto;
-
+    margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-btn {
@@ -245,7 +251,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    border-radius: 4px;
     margin-bottom: 8px;
 }
 
@@ -385,6 +391,10 @@ img {
     background-color: #404bbf;
   }
 
+  .customers-section {
+    padding: 120px 0;
+  }
+  
 .customers-container {
     width: 1128px;
     height: 200px;
@@ -471,7 +481,8 @@ img {
     font-size: var(--text-font-size);
     line-height: var(--standart-line-height);
     letter-spacing: var(--standart-letter-spacing);
-    max-width: 264px
+    max-width: 264px;
+    margin-bottom: 16px
 }
 
 /*Social Media Icons */
@@ -512,6 +523,7 @@ img {
 .footer-sm-icon {
     width: 24px;
     height: 24px;
+    fill: var(--light-color) ;
 }
 
 .footer-sm-link:is(:hover, :focus){
