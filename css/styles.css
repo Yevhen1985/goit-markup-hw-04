@@ -424,12 +424,12 @@ img {
 }
 
 .customers-item {
+    width: calc((100% - 120px) / 6);
     width: 168px;
     height: 88px;
 }
 
 .customers-link {
-    width: calc((100% - 120px) / 6);
     display: flex;
     width: 168px;
     height: 88px;
@@ -437,7 +437,7 @@ img {
     border-radius: 4px;
     align-items: center;
     justify-content: center;
-    fill: var(--customers-logo);
+    color: var(--customers-logo);
 }
 
 
@@ -467,7 +467,16 @@ img {
     margin-right: 120px;
 }
 
-.full-logo-footer{margin-bottom: 16px;}
+.full-logo-footer{font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--btn-blue);
+    margin-right: 76px;
+    display: inline-block;
+    margin-bottom: 16px;}
 
 .footer-logo {
     display: inline-block;
@@ -501,7 +510,7 @@ img {
     line-height: 24px;
     letter-spacing: 0.02em;
     color: #FFFFFF;
-    margin-bottom: 32px;
+    margin-bottom: 16px;
 }
 
 .footer-sm-list {
