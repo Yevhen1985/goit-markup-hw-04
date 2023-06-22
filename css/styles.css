@@ -6,6 +6,7 @@
     --btn-blue: #4D5AE5;
     --btn-focus: #404BBF;
     --btn-lines: #e7e9fc;
+    --customers-logo: #8e8f99;
     --text-font-size: 16px;
     --standart-line-height: 1.50;
     --standart-letter-spacing: 0.02em;
@@ -414,7 +415,7 @@ img {
 }
 
 .customers-list {
-    width: calc((100% - 120px) / 6);
+    
     display: flex;
     gap: 24px;
     align-items: center;
@@ -428,25 +429,27 @@ img {
 }
 
 .customers-link {
+    width: calc((100% - 120px) / 6);
     display: flex;
     width: 168px;
     height: 88px;
-    border: 1px solid #8E8F99;
+    border: 1px solid var(--customers-logo);
     border-radius: 4px;
     align-items: center;
     justify-content: center;
-    fill: #8E8F99;
+    fill: var(--customers-logo);
 }
 
 
 .customers-icon {
     width: 104px;
     height: 56px;
+    fill: currentColor;
 }
 
 .customers-link:is(:hover, :focus){
-    border-color:#4D5AE5;
-    color: #4D5AE5;
+    border-color:#404bbf;
+    color: #404bbf;
 }
 
 /* Footer */
@@ -463,6 +466,8 @@ img {
 .logo-container {
     margin-right: 120px;
 }
+
+.full-logo-footer{margin-bottom: 16px;}
 
 .footer-logo {
     display: inline-block;
